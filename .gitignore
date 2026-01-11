@@ -1,10 +1,10 @@
-# Compiled class files
+
 *.class
 
-# Log files
+
 *.log
 
-# Maven
+
 target/
 pom.xml.tag
 pom.xml.releaseBackup
@@ -16,20 +16,20 @@ buildNumber.properties
 .mvn/timing.properties
 .mvn/wrapper/maven-wrapper.jar
 
-# Eclipse
+
 .project
 .classpath
 .settings/
 .metadata/
 
-# IntelliJ IDEA
+
 .idea/
 *.iml
 *.iws
 *.ipr
 out/
 
-# NetBeans
+
 nbproject/
 build/
 nbbuild/
@@ -37,30 +37,30 @@ dist/
 nbdist/
 .nb-gradle/
 
-# VS Code
+
 .vscode/
 
-# Test output
+
 test-output/
 screenshots/
 reports/
 logs/
 
-# OS files
+
 .DS_Store
 Thumbs.db
 
-# Browser drivers
+
 drivers/
 *.exe
 
-# Temporary files
+
 *.tmp
 *.bak
 *.swp
 *~
 
-# Package files
+
 *.jar
 *.war
 *.ear
