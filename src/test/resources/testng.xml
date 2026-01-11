@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Tealium Ecommerce Test Suite" parallel="false" thread-count="1" verbose="1">
+
+    <parameter name="browser" value="chrome"/>
+
+    <listeners>
+        <listener class-name="com.tealium.ecommerce.listeners.TestListener"/>
+    </listeners>
+
+    <!-- Smoke Test Suite -->
+    <test name="Smoke Tests" preserve-order="true">
+        <classes>
+            <class name="com.tealium.ecommerce.tests.CreateAccountTest"/>
+            <class name="com.tealium.ecommerce.tests.SignInTest"/>
+            <class name="com.tealium.ecommerce.tests.CheckHoverStyleTest"/>
+            <class name="com.tealium.ecommerce.tests.CheckSaleProductsStyleTest"/>
+            <class name="com.tealium.ecommerce.tests.CheckPageFiltersTest"/>
+            <class name="com.tealium.ecommerce.tests.CheckSortingTest"/>
+            <class name="com.tealium.ecommerce.tests.ShoppingCartTest"/>
+            <class name="com.tealium.ecommerce.tests.EmptyShoppingCartTest"/>
+            <class name="com.tealium.ecommerce.tests.HomePageTest">
+                <methods>
+                    <include name="testHomePageLoad"/>
+                    <include name="testLogoDisplay"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Regression Test Suite -->
+    <test name="Regression Tests" preserve-order="true">
+        <classes>
+            <class name="com.tealium.ecommerce.tests.HomePageTest"/>
+            <class name="com.tealium.ecommerce.tests.ProductSearchTest"/>
+            <class name="com.tealium.ecommerce.tests.AddToCartTest"/>
+            <class name="com.tealium.ecommerce.tests.CheckoutTest"/>
+        </classes>
+    </test>
+
+</suite>
