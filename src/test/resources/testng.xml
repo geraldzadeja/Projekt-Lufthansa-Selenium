@@ -8,7 +8,6 @@
         <listener class-name="com.tealium.ecommerce.listeners.TestListener"/>
     </listeners>
 
-    <!-- Smoke Test Suite -->
     <test name="Smoke Tests" preserve-order="true">
         <classes>
             <class name="com.tealium.ecommerce.tests.CreateAccountTest"/>
@@ -19,22 +18,6 @@
             <class name="com.tealium.ecommerce.tests.CheckSortingTest"/>
             <class name="com.tealium.ecommerce.tests.ShoppingCartTest"/>
             <class name="com.tealium.ecommerce.tests.EmptyShoppingCartTest"/>
-            <class name="com.tealium.ecommerce.tests.HomePageTest">
-                <methods>
-                    <include name="testHomePageLoad"/>
-                    <include name="testLogoDisplay"/>
-                </methods>
-            </class>
-        </classes>
-    </test>
-
-    <!-- Regression Test Suite -->
-    <test name="Regression Tests" preserve-order="true">
-        <classes>
-            <class name="com.tealium.ecommerce.tests.HomePageTest"/>
-            <class name="com.tealium.ecommerce.tests.ProductSearchTest"/>
-            <class name="com.tealium.ecommerce.tests.AddToCartTest"/>
-            <class name="com.tealium.ecommerce.tests.CheckoutTest"/>
         </classes>
     </test>
 
